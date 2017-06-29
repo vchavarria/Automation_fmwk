@@ -6,13 +6,13 @@
 
     <groupId>mavne_failsafe_test</groupId>
     <artifactId>mavne_failsafe_test</artifactId>
-    <version>OM 1.0 Snapshot</version>
+    <version>Automation Framework</version>
 
     <dependencies>
     <dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.52.0</version>
+			<version>3.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -27,17 +27,17 @@
 		<dependency>
     <groupId>xml-apis</groupId>
     <artifactId>xml-apis</artifactId>
-    <version>1.4.01</version>
+    <version>1.4.01 </version>
 </dependency>
 <dependency>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-lang3</artifactId>
-    <version>3.0</version>
+    <version>3.5</version>
 </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.4</version>
+            <version>1.2.5</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -55,7 +55,7 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>1.2.4</version>
+            <version>1.2.5</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
@@ -67,7 +67,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.10</version>
+            <version>6.11</version>
             <scope>test</scope>
         </dependency>
         <dependency>

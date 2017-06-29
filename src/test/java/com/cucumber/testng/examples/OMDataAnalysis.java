@@ -7,14 +7,14 @@ import org.openqa.selenium.WebDriver;
 
 import com.cucumber.testng.pageobjects.DataAnalysis_PO;
 
-import Utilities.Constant;
-import Utilities.ExcelLoadUtil;
-import Utilities.ExcelUtils;
-import Utilities.Utility;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import utilis.Constant;
+import utilis.ExcelLoadUtil;
+import utilis.ExcelUtils;
+import utilis.Utility;
 
 public class OMDataAnalysis {
 	public WebDriver driver;
@@ -23,7 +23,7 @@ public class OMDataAnalysis {
 
 	public OMDataAnalysis() {
 		driver = BaseStepDefs.driver;
-		driver.get(Utilities.Constant.BaseURL + Utilities.Constant.Lnk_DtaAnalysys);
+		driver.get(utilis.Constant.BaseURL + utilis.Constant.Lnk_DtaAnalysys);
 	}
 
 	// @Given("^User is on the Section([^\"]*)$")

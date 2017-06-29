@@ -6,12 +6,12 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.cucumber.testng.pageobjects.Reviewerqueue_PO;
 
-import Utilities.Utility;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
+import utilis.Utility;
 
 public class OMValidate_queues {
 
@@ -23,7 +23,7 @@ public class OMValidate_queues {
 
 	public OMValidate_queues() {
 		driver = BaseStepDefs.driver;
-		driver.get(Utilities.Constant.BaseURL + Utilities.Constant.Lnk_RevQueue);
+		driver.get(utilis.Constant.BaseURL + utilis.Constant.Lnk_RevQueue);
 
 	}
 

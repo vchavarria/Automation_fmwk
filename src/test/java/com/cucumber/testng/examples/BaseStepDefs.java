@@ -53,15 +53,18 @@ public class BaseStepDefs {
 		// "C://Users/vchavarria/Downloads/Maven-Failsafe-Plugin-Example-master/src/test/resources/com/drivers/chromedriver.exe");
 		// driver = new ChromeDriver();
 		//
-		driver = new FirefoxDriver();
+		// driver = new FirefoxDriver();
 		/*
 		 * System.setProperty("webdriver.chrome.driver",
 		 * "C://Users//vchavarria//Downloads//Maven-Failsafe-Plugin-Example-master//src//test//resources//com//drivers//chromedriver.exe"
 		 * ); driver = new ChromeDriver();
 		 */
+		System.setProperty("webdriver.firefox.marionette",
+				"C://Users//vrca//Documents//Automation base framework//Automation Frwk//mavne_failsafe_test//src//test//resources//com//drivers//geckodriver.exe");
+		driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get(Utilities.Constant.BaseURL);
+		driver.get(utilis.Constant.BaseURL);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		System.out.println(driver.getTitle());
 		Reviewer_queuePO = PageFactory.initElements(driver, Reviewerqueue_PO.class);
