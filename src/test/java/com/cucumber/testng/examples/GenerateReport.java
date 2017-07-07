@@ -52,7 +52,7 @@ public class GenerateReport {
 			String RootDir = System.getProperty("user.dir");
 			File reportOutputDirectory = new File("target/Masterthought");
 			List<String> list = new ArrayList<String>();
-			list.add("target/cucumber3.json");
+			/* list.add("target/cucumber3.json"); */
 			list.add("target/cucumber4.json");
 
 			String pluginUrlPath = "";

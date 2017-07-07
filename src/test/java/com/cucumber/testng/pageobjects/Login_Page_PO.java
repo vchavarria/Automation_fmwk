@@ -8,13 +8,13 @@ import org.openqa.selenium.support.How;
 public class Login_Page_PO {
 	final WebDriver driver;
 
-	@FindBy(how = How.CSS, using = "[name='username']")
+	@FindBy(how = How.ID, using = "email")
 	public static WebElement Inpt_Username;
 
-	@FindBy(how = How.CSS, using = "[name='password']")
+	@FindBy(how = How.ID, using = "pass")
 	public static WebElement Inpt_Password;
 
-	@FindBy(how = How.CSS, using = "[type='submit']")
+	@FindBy(how = How.ID, using = "u_0_v")
 	public static WebElement Btn_Login;
 
 	@FindBy(how = How.CSS, using = "[type='submit']")
