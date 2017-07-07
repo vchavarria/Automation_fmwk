@@ -17,11 +17,11 @@
 ## (Comments)
 
 #Sample Feature Definition Template
-@tag
+
 Feature: Title of your feature
 	I want to use this template for my feature file
 
-@tag1
+@Scenarios
 Scenario: Login with a valid user
     When User enters a valid user name
     And User enters a valid password
